@@ -7,3 +7,6 @@
 # Update Page
 ![update](https://user-images.githubusercontent.com/67412071/135313375-8ab85ea9-131b-46b9-ac81-42ba8f17fb7a.png)
 
+click Username for navigating to profile page
+click ![three_dots_vertical_icon_159806](https://user-images.githubusercontent.com/67412071/135314828-c8a64d33-9055-4b44-ab43-65682486fbe3.png) for navigating to update page
+
