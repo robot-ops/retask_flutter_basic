@@ -5,20 +5,19 @@ import 'package:flutter/material.dart';
 class Stories extends StatelessWidget {
   final stories = Expanded(
     child: Padding(
-      padding: EdgeInsets.only(top: 8.0),
+      padding: EdgeInsets.only(top: 3.0),
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: 3,
+        itemCount: 5,
         itemBuilder: (context, index) => Stack(
           alignment: Alignment.bottomRight,
           children: <Widget>[
             Container(
-              width: 60.0,
-              height: 60.0,
+              width: 80.0,
+              height: 80.0,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                image: DecorationImage(
-                    image: AssetImage('images/profile_icon.png')),
+                image: DecorationImage(image: AssetImage('images/sqirud.png')),
               ),
             ),
             index == 0
@@ -30,7 +29,7 @@ class Stories extends StatelessWidget {
                       child: Icon(Icons.add, size: 14.0, color: Colors.white),
                     ),
                   )
-                : Container()
+                : Container(),
           ],
         ),
       ),
@@ -40,7 +39,7 @@ class Stories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(16.0),
+      margin: EdgeInsets.all(10.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.start,

@@ -1,6 +1,10 @@
-import 'package:flutter/material.dart';
+// ignore_for_file: prefer_const_constructors
 
+import 'package:flutter/material.dart';
+import 'package:retask_flutter_basic/src/profile/profile.dart';
+import 'package:retask_flutter_basic/src/profile/update.dart';
 import 'src/ui/homepage/home.dart';
+import 'src/ui/splashscreen/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +33,12 @@ class MyApp extends StatelessWidget {
               bodyText1: TextStyle(color: Colors.white, fontFamily: "Aveny")),
           textTheme:
               const TextTheme(bodyText1: TextStyle(color: Colors.white))),
-      home: const Home(),
+      home: const Splash(),
+      routes: <String, WidgetBuilder>{
+        '/Home': (BuildContext context) => Home(),
+        '/Profile': (BuildContext context) => Profile(),
+        '/update': (BuildContext context) => Update(),
+      },
     );
   }
 }

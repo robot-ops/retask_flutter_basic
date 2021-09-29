@@ -1,6 +1,7 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:retask_flutter_basic/src/profile/update.dart';
 import 'package:retask_flutter_basic/src/ui/homepage/content_list.dart';
 
 class Content extends StatelessWidget {
@@ -10,8 +11,12 @@ class Content extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
-      // ignore: prefer_const_constructors
-      children: <Widget>[Flexible(child: ContentList())],
+      children: <Widget>[
+        Flexible(
+            child: ContentList(
+          value: Data(status: '', imgUrl: ''),
+        ))
+      ],
     );
   }
 }
